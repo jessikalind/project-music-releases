@@ -11,6 +11,15 @@ const Albums = (props) => {
             return <AlbumName key={item.id} data={item}/>
         })}
 
+        {data.albums.items.map(item => {
+            return (
+            item.artists.map(name => {
+            return <Artist key={item.id} data={name}/>
+            })
+           
+        )})}
+
+        
     {/* 
     <AlbumCover />
     <AlbumName />
