@@ -4,8 +4,6 @@ const AlbumName = (props) => {
   return (
     <>
       {props.data.name}
-  
-
     </>
   );
 }

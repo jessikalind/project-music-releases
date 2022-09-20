@@ -8,10 +8,9 @@ console.log(data);
 export const App = () => {
   return (
     <>
-    <Header />
-      {data.albums.items.map(item => {
-        return <Albums key={item.id} data={item}/>
-      })}
+        <Header />
+        <Albums />
+      
       
       {/* <header /> */}
       {/* <Album components />*/}

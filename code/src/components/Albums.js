@@ -7,10 +7,10 @@ import Artist from './sub-album/Artist'
 const Albums = (props) => {
   return (
     <>
-    
-        <h2>
-            {props.data.name}
-        </h2>
+        {data.albums.items.map(item => {
+            return <AlbumName key={item.id} data={item}/>
+        })}
+
     {/* 
     <AlbumCover />
     <AlbumName />
@@ -18,6 +18,6 @@ const Albums = (props) => {
      */}
     </>
   );
-}
+} 
 
 export default Albums;
