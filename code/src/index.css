@@ -5,6 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
+}
+
+.outer-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 code {
@@ -12,6 +21,63 @@ code {
     monospace;
 }
 
+header {
+  align-self: center;
+}
+
+.inner-wrapper {
+    width: 80vw;
+    max-width: 900px;
+    padding: 2%;
+    align-self: center;
+    justify-self: center;
+}
+
+.album-container {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 5vh;
+}
+
 .album {
-  border: 2px solid red;
+  width: 300px;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto;
+}
+.album img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.artist-container {
+  justify-self: center;
+  align-self: center;
+}
+
+
+/* TABLET */
+@media (min-width: 668px) and (max-width:1024px) {
+    .album-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+    .album-container {
+        grid-template-columns: auto auto auto auto;
+    }
+    .album {
+      width: 210px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
 }

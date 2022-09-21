@@ -8,25 +8,19 @@ console.log(data);
 export const App = () => {
   return (
     <>
+    <section className = 'outer-wrapper'>
+      <div className = 'inner-wrapper'>
         <Header />
-        <section className='album-container'>
-            {data.albums.items.map(item => {
-                console.log(item);
-                return <Albums key={item.id} data={item}/>
-            })}
-        </section>
-      
-      {/* <header /> */}
-      {/* <Album components />*/}
-        {/* Img */}
-          {/* Hover: like-btn*/}
-          {/* Hover: play-btn*/}
-            {/* Hover: Hover play */}
-          {/* Hover: ...-btn */}
-        {/* Album name */}
-          {/* Hover:underline*/}
-        {/* Artist */}
-          {/* Hover:underline*/}
+
+          <section className='album-container'>
+              {data.albums.items.map(item => {
+                  console.log(item);
+                  return <Albums key={item.id} data={item}/>
+              })}
+          </section>
+        </div>
+    </section>
+
     </>
   );
 }

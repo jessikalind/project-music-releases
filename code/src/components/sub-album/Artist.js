@@ -13,7 +13,7 @@ const Artist = (props) => {
             key={artist.id}
             className="artist-container">
             <h3 className="artist-name">
-              {artist.name}
+                {artist.name}
             </h3>
           </a>
         );
