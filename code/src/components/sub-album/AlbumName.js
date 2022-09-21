@@ -3,7 +3,7 @@ import React from 'react';
 const AlbumName = (props) => {
   return (
     <>
-      {props.data.name}
+      <h3></h3>
     </>
   );
 }

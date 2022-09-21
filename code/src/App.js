@@ -9,8 +9,12 @@ export const App = () => {
   return (
     <>
         <Header />
-        <Albums />
-      
+        <section className='album-container'>
+            {data.albums.items.map(item => {
+                console.log(item);
+                return <Albums key={item.id} data={item}/>
+            })}
+        </section>
       
       {/* <header /> */}
       {/* <Album components />*/}
