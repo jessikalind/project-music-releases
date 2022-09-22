@@ -4,7 +4,7 @@ const Artist = (props) => {
   console.log(props.artists)
   return (
     <div>
-      {props.artists.map((artist) => {
+      {props.artists.map((artist, index) => {
         return (
           <a
             target="_blank"
@@ -12,9 +12,10 @@ const Artist = (props) => {
             href={artist.external_urls.spotify}
             key={artist.id}
             className="artist-container">
-            <h3 className="artist-name">
-                {artist.name}
-            </h3>
+            {artist.name}
+            <span>{props.artists.length-1>index?', ' : ''}</span>
+           
+            
           </a>
         );
       })}
