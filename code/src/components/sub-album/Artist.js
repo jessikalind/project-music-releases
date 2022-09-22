@@ -13,9 +13,7 @@ const Artist = (props) => {
             key={artist.id}
             className="artist-container">
             {artist.name}
-            <span>{props.artists.length-1>index?', ' : ''}</span>
-           
-            
+            <span>{props.artists.length-1>index?', ' : ''}</span>            
           </a>
         );
       })}
