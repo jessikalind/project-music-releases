@@ -13,7 +13,7 @@ const Albums = (props) => {
             alt={props.data.name} 
         />
 
-            <AlbumName />
+            <AlbumName album={props.data.name}/>
 
             <Artist artists={props.data.artists}/>
 

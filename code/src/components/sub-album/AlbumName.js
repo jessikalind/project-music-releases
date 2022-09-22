@@ -1,10 +1,8 @@
 import React from 'react';
 
-const AlbumName = (props) => {
+const AlbumName = ({album}) => {
   return (
-    <>
-      <h3></h3>
-    </>
+    <p>{album}</p>
   );
 }
 
