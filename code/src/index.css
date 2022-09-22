@@ -9,6 +9,17 @@ body {
   color: white;
 }
 
+.album-name {
+  font-family: helvetica;
+  font-size: 14px;
+}
+
+.artist-name {
+  font-family: helvetica;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
 .outer-wrapper {
     display: grid;
     grid-template-columns: auto;
