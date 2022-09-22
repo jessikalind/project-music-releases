@@ -1,23 +1,23 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: black;
-  color: white;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+    color: white;
 }
 
 .album-name {
-  font-family: helvetica;
-  font-size: 14px;
+    font-family: helvetica;
+    font-size: 14px;
 }
 
 .artist-name {
-  font-family: helvetica;
-  font-size: 14px;
-  font-weight: lighter;
+    font-family: helvetica;
+    font-size: 14px;
+    font-weight: lighter;
 }
 
 .outer-wrapper {
@@ -28,12 +28,12 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 header {
-  align-self: center;
+    align-self: center;
 }
 
 .inner-wrapper {
@@ -51,10 +51,10 @@ header {
 }
 
 .album {
-  width: 300px;
-  height: auto;
-  display: grid;
-  grid-template-columns: auto;
+    width: 300px;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto;
 }
 .album img {
     width: 100%;
@@ -68,10 +68,41 @@ a {
 }
 
 .artist-container {
-  justify-self: center;
-  align-self: center;
+    justify-self: center;
+    align-self: center;
 }
 
+.cover-and-btns {
+    transition: 0.5s ease;
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+}
+
+.image-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease;
+}
+
+.btn-container {
+    display: none;
+}
+
+.btn-container:hover {
+    display: flex;
+    position: absolute;
+    top: 35%;
+    left: 20%
+}
+
+.btn {
+    width: 25%;
+}
 
 /* TABLET */
 @media (min-width: 668px) and (max-width:1024px) {
