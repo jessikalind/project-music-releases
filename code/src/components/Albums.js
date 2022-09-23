@@ -10,13 +10,14 @@ const Albums = (props) => {
         <div className='album'>
 
             <div className='cover-and-btns'>
+                <Buttons />
+                
                 <div className='image-overlay'></div>
                 <img 
                     src={props.data.images[1].url}
                     className='album-cover'
                     alt={props.data.name} 
                 />
-                <Buttons />
             </div>
 
             <a

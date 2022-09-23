@@ -56,6 +56,7 @@ header {
     display: grid;
     grid-template-columns: auto;
 }
+
 .album img {
     width: 100%;
     height: auto;
@@ -98,7 +99,7 @@ a {
     }
 
     .cover-and-btns {
-        transition: 0.5s ease;
+        
         position: relative;
     }
     
@@ -107,30 +108,32 @@ a {
         width: 100%;
         height: 100%;
         color: transparent;
+        transition: 0.5s ease;
     }
     
     .image-overlay:hover {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.6);
         transition: 0.5s ease;
     }
     
     .btn-container {
         display: flex;
         position: absolute;
-        top: 35%;
-        left: 20%
+        top: 40%;
+        left: 20% 
     }
     
     .btn {
-        display: none;
-
-    }
-    
-    .image-overlay:hover + .btn, .btn:hover {
-        display: inline-block;
+        /* display: none; */
         width: 25%;
-        mix-blend-mode: multiply;
+        mix-blend-mode: lighten;
+        filter: invert(1);
         border: none !important;
+        z-index: 1;
     }
-    
+
+    .play:hover {
+        transform: scale(1.5);
+    }
+       
 }
