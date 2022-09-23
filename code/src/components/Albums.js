@@ -1,7 +1,6 @@
 import React from 'react';
-// import AlbumName from './sub-album/AlbumName';
-import Artist from './sub-album/Artist';
-import Buttons from './sub-album/Buttons';
+import Artist from './Artist';
+import Buttons from './Buttons';
 
 const Albums = (props) => {
   return (
@@ -10,14 +9,16 @@ const Albums = (props) => {
         <div className='album'>
 
             <div className='cover-and-btns'>
-                <Buttons />
-                
+
                 <div className='image-overlay'></div>
                 <img 
                     src={props.data.images[1].url}
                     className='album-cover'
                     alt={props.data.name} 
                 />
+                
+                <Buttons />
+
             </div>
 
             <a

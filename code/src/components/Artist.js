@@ -7,6 +7,7 @@ const Artist = (props) => {
 
             {props.artists.map((artist, index) => {
                 return (
+
                 <a
                     target="_blank"
                     rel="noopener noreferrer"
@@ -16,6 +17,7 @@ const Artist = (props) => {
                     {artist.name}
                     <span>{(props.artists.length - 1 > index) ? ((props.artists.length - 2 === index) ? ' & ' : ', ') : ''}</span>            
                 </a>
+                
                 );
             })}
 
