@@ -1,9 +1,10 @@
 import React from 'react';
 
 const Artist = (props) => {
-    console.log(props.artists)
     return (
+
         <div>
+
             {props.artists.map((artist, index) => {
                 return (
                 <a
@@ -17,7 +18,9 @@ const Artist = (props) => {
                 </a>
                 );
             })}
+
         </div>
+
     );
 }      
 

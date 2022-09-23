@@ -1,11 +1,12 @@
 import React from 'react';
-import AlbumName from './sub-album/AlbumName';
+// import AlbumName from './sub-album/AlbumName';
 import Artist from './sub-album/Artist';
 import Buttons from './sub-album/Buttons';
 
 const Albums = (props) => {
   return (
     <>
+
         <div className='album'>
 
             <div className='cover-and-btns'>
@@ -18,11 +19,20 @@ const Albums = (props) => {
                 <Buttons />
             </div>
 
-            <AlbumName album={props.data.name}/>
+            <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={props.data.external_urls.spotify}
+                key={props.data.id}
+                className="album-name">
+
+                {props.data.name}  
+            </a>
 
             <Artist artists={props.data.artists}/>
           
         </div>
+
     </>
   );
 } 
