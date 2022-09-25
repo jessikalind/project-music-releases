@@ -11,7 +11,7 @@ const Artist = (props) => {
                 <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href={artist.uri}
+                    href={artist.external_urls.spotify}
                     key={artist.id}
                     className="artist-container">
                     {artist.name}
